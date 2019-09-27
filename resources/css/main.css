@@ -4,33 +4,49 @@
     box-sizing: border-box;
 }
 
-.grid-wrapper {
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(12, 100px);
-    grid-template-rows: auto;
-    grid-gap: 30px;
-
+    column-gap: 30px;
+    grid-template-areas:
+        'header header header header header header'
+        'main main main main main main'
+        'about about about about about about'
+        'projects projects projects projects projects projects'
+        'footer footer footer footer footer footer'
 }
+
+
 
 header {
     background-color: black;
     color: white;
-    
+  
 }
 
+.item-1 {
+    grid-area: header;
+}
 
 
 .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 1rem;
+    display: grid;
+    /* grid-gap: 20px; */
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
 }
 
-.inner-nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.name-nav-bar {
+    margin-left: 29px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav-bar ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr;  
 }
 
 .inner-nav-bar li {
@@ -41,29 +57,40 @@ header {
 .inner-nav-bar a {
     text-decoration: none;
     color: white;
-    
+}
+
+.item-4 {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
 }
 
 
-
-.hero-image img{
-    background-size: cover;
-    background-attachment: fixed;
+.item-4 #img-1 {
     width: 100%;
-    position: relative;
-    
+    height: auto;
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    overflow: hidden;
 }
-.my-image-circ img{
-    width: 20%;
-    height: 20%;
-    z-index: 10;
+
+.item-4 #img-2{
+    grid-column: 1;
+    grid-row: 2;
+
+    align-self: center;
+    justify-self: center;
+
+    z-index: 1;
+
+    width: 25%;
+    height: 100%;
+    /* z-index: 10; */
     border-radius: 50%;
     /* transform: scale(2); */
     overflow: hidden;
-    position: relative;
     border: solid 4px;
-    
-
 }
 
 p {
