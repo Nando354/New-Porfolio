@@ -224,6 +224,10 @@ header {
   
 }
 
+.button {
+    background-color: darkgray;
+    padding: 15px 32px;
+}
 
 
 
