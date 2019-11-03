@@ -154,11 +154,12 @@ header {
     padding: 20px;
     margin: 20px;
     background-color: rgb(240, 238, 238);
-    font-family: system-ui, courier, monospace;
-    
-    
-   
-  
+    font-family: system-ui, courier, monospace; 
+}
+
+.project{ 
+    display: flex;
+    flex-direction: column;
 }
 
 .projects h1 {
@@ -198,6 +199,7 @@ header {
 }
 
 .project-1 {
+  
     grid-column: 1/2;
     grid-row: 2/3;
 }
@@ -221,12 +223,25 @@ header {
 .project-5 {
     grid-column: 1/2;
     grid-row: 6/7;
+    
   
 }
 
 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     background-color: darkgray;
+    border: none;
+    color: white;
     padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 
