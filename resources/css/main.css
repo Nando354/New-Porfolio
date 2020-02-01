@@ -150,7 +150,7 @@ header {
     /* grid-auto-rows: minmax(100px, 400px); */
     /* grid-template-rows: repeat(6, minmax(200px, 400px) ); */
     /* border: solid black; */
-    grid-gap: 20px;
+    grid-gap: 60px;
     padding: 20px;
     margin: 20px;
     background-color: rgb(240, 238, 238);
@@ -173,6 +173,7 @@ header {
     justify-content: center;
     text-align: center;
     padding: 50px;
+    background-color: rgb(145, 226, 206);
    
     
     
@@ -185,13 +186,14 @@ header {
     padding: 30px 20px 10px 20px;
     justify-content: center;
     text-align: center;
-    /* background-color: rgb(19, 179, 144); */
+    background-color: rgb(181, 226, 215);
+    
 }
 
 .projects p {
     /* border: solid black; */
     padding: 20px 40px 40px 40px;
-    /* background-color: rgb(128, 229, 233); */
+    background-color: rgb(215, 226, 226);
 
 }
 
@@ -200,8 +202,9 @@ header {
     height: 100%;
     overflow: hidden;
     border: solid 3px white;
-    object-fit: cover;
+    object-fit: fill;
     object-position: top center;
+    /* border-radius: 50%;    Add this for phone size */
     
 }
 
